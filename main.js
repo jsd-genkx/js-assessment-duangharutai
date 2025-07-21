@@ -32,62 +32,48 @@ class Field {
 	rungame(){
 		while(true){
 			const input = prompt("Which way? (d=moveright a=moveleft w=moveup s=movedown)");
-			console.log(`your direction ${input}`);
-				if (input === "d") {
-  greeting = "Good morning";
-} else if (time < 20) {
-  greeting = "Good day";
-} else {
-  greeting = "Good evening";
-}
-		
-	  
-			// `your direction ${input}`
+			
+			console.log(`input: ${input}`);
+				if(input === "d"){
+					this.moveRight();
+				}
+				else if(input === "a"){
+					this.moveLeft();
+				}
+				else if(input === "w"){
+					this.moveUp();
+				}
+				else if(input === "s"){
+					this.moveDown();
+				}
+				else {
+					console.log("input not correctly");
+				}
+			
+			
 		}
-		
+			// console.log(this.field[this.positionRow][this.positionCol])
+			// this.field[this.positionRow][this.positionCol] = pathCharacter
 	}
+
+	 // movement function
+    moveRight() {
+        this.positionCol++;
+    }
+    moveLeft() {
+        this.positionCol--;
+    }
+    moveUp() {
+        this.positionRow--;
+    }
+    moveDown() {
+        this.positionRow++;
+    }
+		
+}
 	
 
-}
-		
-// 	// รับค่า input
-// 	rungame(){
-// 	while(true){
-// 		const input = prompt("which way? (d=moveright a=moveleft w=moveup s=movedown)");
-// 		// console.log(your direction ${command});
 
-// 		console.log(this.field);
-// 			if(command === "d"){
-// 				// console.log(this.positionRow);
-// 				// console.log(this.positionCol);
-// 				this.positionRow=this.positionRow+
-// 				// console.log(this.positionCol)
-// 			}
-// 			else if(command === "a"){
-// 				// console.log(this.positionRow);
-// 				// console.log(this.positionCol);
-// 				this.moveleft();
-// 				// console.log(this.positionCol)
-// 			}
-// 			else if(command === "w"){
-// 				// console.log(this.positionRow);
-// 				// console.log(this.positionCol);
-// 				this.moveup();
-// 				// console.log(this.positionRow)
-// 			}
-// 			else if(command === "s"){
-// 				// console.log(this.positionRow);
-// 				// console.log(this.positionCol);
-// 				this.moveup();
-// 				// console.log(this.positionRow)
-// 			}
-// 			else {
-// 				console.log("input not correctly");
-// 			}
-// 			console.log(this.field[this.positionRow][this.positionCol])
-// 			this.field[this.positionRow][this.positionCol] = pathCharacter
-// 	}
-// }
 
         // clear();
 
@@ -96,15 +82,7 @@ class Field {
     // }
 
 
-		
-    
-    
-
-
-
-
-
-
+	
 
 	
 	// Your Code //
