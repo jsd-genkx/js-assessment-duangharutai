@@ -132,7 +132,7 @@
 ### Thinking Process
 
 1. // step 1
-print map ให้ได้ในลักษณะ
+print map 
 2. // step 2
 3. // ...
 4. // step n

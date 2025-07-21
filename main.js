@@ -23,16 +23,118 @@ class Field {
 	}
 
 	// Print field //
-	 print() {
+    print() {
+		for (let field of this.field) {
+			console.log(field);
+		}
+	};
+	// รับค่า input
+	rungame(){
+	while(true){
+		const input = prompt("which way? (d=moveright a=moveleft w=moveup s=movedown)");
+		// console.log(your direction ${command});
+
+		// console.log(this.field);
+			if(command === "d"){
+				// console.log(this.positionRow);
+				// console.log(this.positionCol);
+				this.positionRow=this.positionRow+
+				// console.log(this.positionCol)
+			}
+			else if(command === "a"){
+				// console.log(this.positionRow);
+				// console.log(this.positionCol);
+				this.moveleft();
+				// console.log(this.positionCol)
+			}
+			else if(command === "w"){
+				// console.log(this.positionRow);
+				// console.log(this.positionCol);
+				this.moveup();
+				// console.log(this.positionRow)
+			}
+			else if(command === "s"){
+				// console.log(this.positionRow);
+				// console.log(this.positionCol);
+				this.moveup();
+				// console.log(this.positionRow)
+			}
+			else {
+				console.log("input not correctly");
+			}
+			console.log(this.field[this.positionRow][this.positionCol])
+			this.field[this.positionRow][this.positionCol] = pathCharacter
+	}
+}
 
         // clear();
 
         // Replace with your own code //
-        console.log(this.field); // Please REMOVE this line before you start your code!
-    }
-    }
+        // console.log(print; // Please REMOVE this line before you start your code!
+    // }
+
+	// const direction = prompt(which way?)
 	
+	// function move(direction) {
+	// 	if(direction === "a") {
+	// 		moveright()
+	// 	}
+	// 	 else if(direction === "d") {
+	// 		moveleft()
+	// 	}
+	// 	else if(direction === "w") {
+	// 		moveup()
+	// 	}
+	// 	else if (direction === "s") {
+	// 		movedown()
+	// 	}
 	
+	// }
+		
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// move(direction) {
+	// 	let x = 0; // Starting row index
+	// 	let y = 0; // Starting column index
+	// 	const moves = [];
+	// 	moves.push(board[x][y]); 
+	// 		function moveRight() {
+  	// 			y++; 
+  	// 		moves.push(board[x][y]);
+	// 		}
+
+	// 		function moveLeft() {
+  	// 			y--; 
+  	// 		moves.push(board[x][y]);
+	// 		}
+
+	// 		function moveUp() {
+  	// 			x--; 
+  	// 		moves.push(board[x][y]);
+	// 		}
+
+	// 		function moveDown() {
+  	// 			x++; 
+ 	// 		 moves.push(board[x][y]);
+	// 		}
+// }
+
+
 // 	print() {
 // 		for (let i = 0; i < this.field.length; i++) {
 //         console.log(this.field[i]);
@@ -44,11 +146,11 @@ class Field {
 // 			console.log(this.positionRow);
 // 			console.log(this.positionCol);
 // 		}else
-// 		// clear();
-// // for (let i = 0; i < this.field.length; i++) {
-// //         console.log(this.field[i].join(''));
-//     }
-// 		// Replace with your own code //
+		// clear();
+// for (let i = 0; i < this.field.length; i++) {
+//         console.log(this.field[i].join(''));
+    // }
+		// Replace with your own code //
 // 		console.log(this.field); // Please REMOVE this line before you start your code!
 // 	}
 // 	}
@@ -64,3 +166,4 @@ const newGame = new Field([
 	["░", "^", "░"],
 ]);
 newGame.print();
+newGame.rungame();
