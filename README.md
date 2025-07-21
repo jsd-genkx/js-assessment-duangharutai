@@ -132,10 +132,27 @@
 ### Thinking Process
 
 1. // step 1
-print map 
+print แผนที่ออกมาให้ได้ก่อน เพื่อแสดงแผนที่ปัจจุบัน
+และต้องมีข้อความบอกผู้เล่นว่าต้อง input ยังไง ถึงจะทำให้ * เคลื่อนที่ได้
 2. // step 2
-3. // ...
-4. // step n
+สร้าง Method ทำให้สามารถเคลื่อนที่ได้ โดยมีคำสั่ง
+- moveRight
+- moveLeft
+- moveUp
+- moveDown
+
+3. step 3
+สร้างเงื่อนไขเพิ่มเติม โดยให้แจ้ง ALERT ให้ผู้เล่นทราบ
+ 1. แสดงข้อความ ชนะ = ผู้เล่นหา ^ เจอ
+ 2. แสดงข้อความแพ้ = ผู้เล่นตกหลุม(0)
+ 3. แสดงข้อความแพ้ = ผู้เล่นออกนอกสนาม
+
+4. Step 4
+  สร้าง Random ตำแหน่ง
+- holes
+- hat
+- actor
+
 
 _Notes:_<br>
 _- You can attach flowcharts, diagrams, and images as needed._<br>
