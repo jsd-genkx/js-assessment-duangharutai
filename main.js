@@ -17,21 +17,44 @@ class Field {
 
 		// Replace with your own code //
 		// Set the home position at (0, 0) before the game starts
-		this.positionRow = 0;
-		this.positionCol = 0;
+		this.positionRow = 0; //up down
+		this.positionCol = 0; //left right
 		this.field[this.positionRow][this.positionCol] = pathCharacter;
 	}
 
 	// Print field //
-	print() {
-		clear();
+	 print() {
 
-		// Replace with your own code //
-		console.log(this.field); // Please REMOVE this line before you start your code!
-	}
+        // clear();
 
+        // Replace with your own code //
+        console.log(this.field); // Please REMOVE this line before you start your code!
+    }
+    }
+	
+	
+// 	print() {
+// 		for (let i = 0; i < this.field.length; i++) {
+//         console.log(this.field[i]);
+// 		let i;
+// 		while(true) {const command = prompt("input:");
+// 	console.log(`your input ${command}`);
+
+// 		if (command == 6) {
+// 			console.log(this.positionRow);
+// 			console.log(this.positionCol);
+// 		}else
+// 		// clear();
+// // for (let i = 0; i < this.field.length; i++) {
+// //         console.log(this.field[i].join(''));
+//     }
+// 		// Replace with your own code //
+// 		console.log(this.field); // Please REMOVE this line before you start your code!
+// 	}
+// 	}
+	
 	// Your Code //
-}
+// }
 
 // Game Mode ON
 // Remark: Code example below should be deleted and use your own code.
